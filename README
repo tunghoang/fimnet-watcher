@@ -1,0 +1,11 @@
+Requirements:
+    - inotify
+    - libcurl
+Configure file: 
+    - specify configure file in command line option
+    - important config info in configure file: 
+        + vod_dir: dir that will be monitored
+        + adm_update_url: url that will be used to update to cms
+Log output:
+    - Syslog, LOCAL1
+    - Filter INFO messages into a separated file for monitoring file upload history

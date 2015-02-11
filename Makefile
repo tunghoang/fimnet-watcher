@@ -1,8 +1,9 @@
 .PHONY: all clean
 
-C_FLAGS :=
-LIBS := -lpthread
-C_SRCS := watcher.c
+INC_DIR := include
+C_FLAGS := -I$(INC_DIR)
+LIBS := -lpthread -lm -lcurl
+C_SRCS := watcher.c ini.c cJSON.c
 
 APP := watcher
 
